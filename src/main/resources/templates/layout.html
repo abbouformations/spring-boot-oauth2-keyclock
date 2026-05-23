@@ -1,0 +1,29 @@
+<!-- fragments.html -->
+
+<head th:fragment="headerFragment">
+    <meta charset="UTF-8">
+
+    <title>Customer Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          th:href="@{/webjars/bootstrap/4.6.1/css/bootstrap.min.css}" />
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet"
+          th:href="@{/webjars/datatables/1.10.25/css/jquery.dataTables.min.css}" />
+</head>
+
+<div th:fragment="footerFragment">
+    <p>Formation Architecture des composants d'entreprise</p>
+</div>
+
+<div th:fragment="scriptsFragment">
+
+    <script th:src="@{/webjars/jquery/3.6.0/jquery.min.js}"></script>
+
+    <script th:src="@{/webjars/bootstrap/4.6.1/js/bootstrap.bundle.min.js}"></script>
+
+    <script th:src="@{/webjars/datatables/1.10.25/js/jquery.dataTables.min.js}"></script>
+
+</div>
